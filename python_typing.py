@@ -86,7 +86,7 @@ Argument 1 to "callable_as_param" has incompatible type "Callable[[str, str], st
 #This example will be a nested function. 
 
 def nested() -> Callable[[int, int], int]: 
-    #Notice that the functino signature (param types and return type) match that of the outer function, which is returning the inner function
+    #Notice that the function signature (param types and return type) match that of the outer function, which is returning the inner function
     def subtract(x:int, y:int) -> int: 
         return x - y 
 
