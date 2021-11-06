@@ -28,7 +28,7 @@ class Stack(Generic[T]):
     def __repr__(self): 
         return repr(self.container)
     
-num_of_disks = 3
+num_of_disks = 6
 tower_a: Stack[int] = Stack()
 tower_b: Stack[int] = Stack()
 tower_c: Stack[int] = Stack()
@@ -40,9 +40,6 @@ for i in range(1,num_of_disks + 1):
 def hanoi(source, dest, temp, n): 
     if n == 1: 
         dest.push(source.pop())
-        print("tower a",tower_a)
-        print("tower b",tower_b)
-        print('tower c',tower_c)   
         
     else: 
         #recurion
